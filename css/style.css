@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+    background-image: linear-gradient(#0c0d0f,#343537);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navBar{
+    height: 60px;
+    background-color: #2b2b2b;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+.logoContainer{
+    padding: 0 5px;
+    gap: 15px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+}
+
+.container{
+    min-height: 69vh;
+    color: white;
+    width: 90%;
+    margin: 15px auto;
+    padding: 10px 15px;
+    border-radius: 15px;
+    background-image: url('../img/BG.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.songBanner img{
+    height: 300px;
+    width: 300px;
+    border-radius: 150px;
+}
+
+.bottomContainer{
+    position: sticky;
+    bottom: 0;
+    height: 110px;
+    background-color: #2b2b2b;
+    flex-direction: column;
+    color: white;
+}
+
+.icons{
+    margin-top: 15px;
+}
+.icons i{
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+}
+
+.songItemContainer{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.songItems{
+    background-color: rgb(77, 77, 77);
+    margin: 12px 0;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 35px;
+}
+
+.songItems img{
+    border-radius: 20px;
+    height: 30px;
+    width: 30px;
+    margin: 0 10px;
+}
+
+.classListPlay{
+    margin: 0 23px;
+}
+
+.timeStamp i{
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 10vw;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+@keyframes discRotate {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width:950px) {
+    .songBanner {
+        display: none;
+    }
+}
+@media screen and (max-width:600px) {
+    .songBanner {
+        display: none;
+    }
+    #masterSongName{
+        font-size: 6px;
+    }
+}
